@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>GothamCity</title>
+    <style>
+        .table-container {
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .black-yellow-column {
+            background-color: black;
+            color: white;  /* Texto branco nas tabelas do Batman */
+        }
+        .blue-red-yellow-column {
+            background-color: #0d6efd; /* Azul */
+            color: white;  /* Texto branco nas tabelas do Superman */
+        }
+        .table th, .table td {
+            text-align: center;
+        }
+        .table thead {
+            background-color: #333;
+            color: white;
+        }
+        .table tbody tr:nth-child(odd) {
+            background-color: #444;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Gotham</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active">Início</a>
+                        <a href="#" class="nav-item nav-link">Hérois</a>
+                        <a href="#" class="nav-item nav-link">Vilões</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Crime e Justiça</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Linha para as tabelas -->
+        <div class="row justify-content-between">
+            <!-- Coluna preta e amarela (Batman) -->
+            <div class="col-12 col-md-6 col-lg-5 black-yellow-column table-container d-flex justify-content-center">
+                <table class="table table-success table-bordered" style="width: 100%; max-width: 300px;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Batman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome Real</td>
+                            <td>Bruce Wayne</td>
+                        </tr>
+                        <tr>
+                            <td>Identidade Secreta</td>
+                            <td>Batman</td>
+                        </tr>
+                        <tr>
+                            <td>Habilidades</td>
+                            <td>Inteligência, combate corpo a corpo, gadgets tecnológicos</td>
+                        </tr>
+                        <tr>
+                            <td>Frase Famosa</td>
+                            <td>"Eu sou a vingança, eu sou a noite!"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Coluna azul, vermelha e amarela (Superman) -->
+            <div class="col-12 col-md-6 col-lg-5 blue-red-yellow-column table-container d-flex justify-content-center">
+                <table class="table table-success table-bordered" style="width: 100%; max-width: 300px;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Superman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome Real</td>
+                            <td>Clark Kent</td>
+                        </tr>
+                        <tr>
+                            <td>Identidade Secreta</td>
+                            <td>Superman</td>
+                        </tr>
+                        <tr>
+                            <td>Habilidades</td>
+                            <td>Força sobre-humana, voo, visão de calor, invulnerabilidade</td>
+                        </tr>
+                        <tr>
+                            <td>Frase Famosa</td>
+                            <td>"Eu sou a esperança de todos!"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Linha para as tabelas de vilões -->
+        <div class="row justify-content-between">
+            <!-- Coluna preta e amarela (Coringa) -->
+            <div class="col-12 col-md-6 col-lg-5 black-yellow-column table-container d-flex justify-content-center">
+                <table class="table table-success table-bordered" style="width: 100%; max-width: 300px;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Coringa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome Real</td>
+                            <td>Não conhecido</td>
+                        </tr>
+                        <tr>
+                            <td>Identidade Secreta</td>
+                            <td>Coringa</td>
+                        </tr>
+                        <tr>
+                            <td>Habilidades</td>
+                            <td>Genialidade, manipulação, habilidades em combate, experiência com armas</td>
+                        </tr>
+                        <tr>
+                            <td>Frase Famosa</td>
+                            <td>"Porque eu sou louco!"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Coluna azul, vermelha e amarela (Harley Quinn) -->
+            <div class="col-12 col-md-6 col-lg-5 blue-red-yellow-column table-container d-flex justify-content-center">
+                <table class="table table-success table-bordered" style="width: 100%; max-width: 300px;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Harley Quinn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome Real</td>
+                            <td>Harleen Quinzel</td>
+                        </tr>
+                        <tr>
+                            <td>Identidade Secreta</td>
+                            <td>Harley Quinn</td>
+                        </tr>
+                        <tr>
+                            <td>Habilidades</td>
+                            <td>Habilidades acrobáticas, psicologia, combate corpo a corpo</td>
+                        </tr>
+                        <tr>
+                            <td>Frase Famosa</td>
+                            <td>"Eu não sou louca, eu sou apenas apaixonada!"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <!-- Coluna preta e amarela (Pinguim) -->
+            <div class="col-12 col-md-6 col-lg-5 black-yellow-column table-container d-flex justify-content-center">
+                <table class="table table-success table-bordered" style="width: 100%; max-width: 300px;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Pinguim</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome Real</td>
+                            <td>Oswald Cobblepot</td>
+                        </tr>
+                        <tr>
+                            <td>Identidade Secreta</td>
+                            <td>Pinguim</td>
+                        </tr>
+                        <tr>
+                            <td>Habilidades</td>
+                            <td>Gênio do crime, mestre estrategista, habilidades em combate</td>
+                        </tr>
+                        <tr>
+                            <td>Frase Famosa</td>
+                            <td>"Não é só um pinguim, é um líder!"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
